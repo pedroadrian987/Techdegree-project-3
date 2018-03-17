@@ -1,0 +1,493 @@
+/*general*/
+body {
+  color: #314e64;
+  background-color: white;
+  font-family: Merriweather, serif;
+  font-size:1em;
+}
+
+header {
+  text-align: center;
+  margin-bottom:2em;
+  line-height:1.3em;
+}
+
+footer {
+  text-align:center;
+  margin-bottom:8em;
+}
+
+/*elements*/
+h1 {
+  font-size:1.2em;
+}
+
+h2 {
+  font-size:1.2em;
+  font-weight:900;
+}
+
+p {
+  font-size:0.9em;
+}
+
+hr {
+  width:90%;
+  border-left:none;
+  border-right:none;
+}
+
+fieldset {
+  width:90%;
+  padding-left:5%;
+  padding-right:5%;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+input {
+  float:left;
+  clear:both;
+  width:95%;
+  height:3.5em;
+  border:1px;
+  border-radius:5px;
+  background-color:#efe0e0;
+  margin-top:1em;
+  margin-bottom:1.5em;
+  font-family: Merriweather, serif;
+  transition: border 0.5s;
+}
+
+
+select {
+  float:left;
+  clear:both;
+  width:100%;
+  height:3.5em;
+  border-radius:0.5em;
+  background-color:#dfd0d0;
+  border-color:transparent;
+  margin-top:1em;
+  margin-bottom:1.5em;
+  opacity:0.5;
+  font-family: Merriweather, serif;
+  transition: border 0.5s;
+}
+
+option {
+  width:100%;
+}
+
+textarea {
+  width:95%;
+  border-radius:0.5em;
+  background-color:#efe0e0;
+  border-color:transparent;
+  padding-top:2em;
+  padding-left:1em;
+  margin-right:0;
+  resize:none;
+  font-family: Merriweather, serif;
+}
+
+header div {
+  color: white;
+  background-color: #314e64;
+  align-content:center;
+  text-align: center;
+  padding:1.8em 2em;
+}
+
+header h2 {
+  padding:1.8em 0 0.4em;
+}
+
+header p {
+  padding:0.5em 1em;
+  opacity:0.5;
+}
+
+
+/*groups*/
+
+
+#hr1 {
+  border-top:7px solid #314e64;
+  border-bottom:2px solid #314e64;
+  padding-bottom:0.3em;
+}
+
+#hr2 {
+  border-top: 2px solid #314e64;
+}
+
+.label1 {
+  float:left;
+  clear:both;
+}
+
+#zip_code {
+  width:50%;
+}
+
+#text_area {
+  clear:both;
+  padding-top:1.7em;
+}
+
+#sugesstion {
+  width:95%;
+  float:left;
+  clear:both;
+  padding-right:0;
+  margin-right:0;
+}
+
+#sugesstion:focus {
+  border:2px solid blue;
+}
+
+#submit {
+  width:90%;
+  height:3em;
+  margin-left:5%;
+  margin-right:5%;
+  color:white;
+  background-color:#10a7a5;
+  font-size:1.5em;
+  border-radius:0.2em;
+}
+
+#name:empty, #mail:empty, #phone:empty {
+  padding-right:1em;
+  text-align:right;
+  width:95%;
+}
+
+#name:focus, #mail:focus, #phone:focus {
+  padding-left:1em;
+  text-align:left;
+  width:90%;
+}
+
+#name:valid, #mail:valid, #phone:valid {
+  border:2px solid green;
+}
+
+#address, #city, #state, #zip_code {
+  padding-left:1em;
+}
+
+fieldset#fieldset1 {
+  background-color:#efefef;
+  border-top-left-radius:5%;
+  border-top-right-radius:5%;
+  transition: background-color 1s;
+}
+
+fieldset#fieldset1:hover {
+  background-color: #dfdfdf;
+}
+
+fieldset#fieldset2 {
+  background-color:#eaeaea;
+  min-height:100%;
+  border-bottom-left-radius:5%;
+  border-bottom-right-radius:5%;
+  top:0;
+  transition: background-color 1s;
+}
+
+fieldset#fieldset2 {
+  background-color: #dfdfdf;
+}
+
+#fieldset1 legend {
+  font-size:1.1em;
+  font-weight:900;
+  padding-top:1.2em;
+  padding-bottom:2em;
+}
+
+#fieldset1 input:focus {
+  border:2px solid blue;
+}
+
+#fieldset1 input:active {
+  border:2px solid blue;
+}
+
+#fieldset1 input:checked {
+  border:2px solid blue;
+}
+
+#fieldset1 input::selection {
+  border:2px solid blue;
+}
+
+#fieldset1 select:focus {
+  border:2px solid blue;
+}
+
+#fieldset2 legend {
+  font-size:1.1em;
+  font-weight:900;
+  padding-top:1em;
+  padding-bottom:2em;
+}
+
+#fieldset2 p {
+  line-height:1.7em;
+  clear:both;
+  padding-top:1.5em;
+  padding-bottom:0.5em;
+}
+
+#fieldset2 input {
+  clear:left;
+  float:left;
+  background-color:#efe0e0;
+  border-color:transparent;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:0.5em;
+  width:5%;
+
+}
+
+#fieldset2 label {
+  float:left;
+  clear:right;
+  width:85%;
+  padding-top:1em;
+}
+
+#fieldset2 label#text_area {
+  float:left;
+  clear:both;
+  padding-left:0;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+  margin-right:0;
+}
+
+/*mediaqueries*/
+@media (min-width:400px) {
+
+  #fieldset2 input {
+    padding-top:1em;
+    margin-top:1.3em;
+  }
+
+  #html_news {
+    width:1em;
+    height:1em;
+  }
+
+  #css_news {
+    width:1em;
+    height:1em;
+  }
+
+  #javascript_news {
+    width:1em;
+    height:1em;
+  }
+
+  #html {
+    width:1em;
+    height:1em;
+  }
+
+  #plain {
+    width:1em;
+    height:1em;
+  }
+
+}
+
+@media (min-width:500px) {
+
+  [placeholder=Required] {
+    width:100%;
+    padding-left:0.8em;
+  }
+
+  #name:focus {
+    width:93%;
+  }
+
+  #mail:focus {
+    width:93%;
+  }
+
+  #phone:focus {
+    width:93%;
+  }
+
+  #address, #address:focus {
+    width:97%;
+  }
+
+  #state, #state:focus {
+    width:100%;
+  }
+
+  #city, #city:focus {
+    width:97%;
+  }
+
+  #sugesstion {
+    padding-right:0.5em;
+  }
+
+  #fieldset2 input {
+    padding-top:1em;
+    margin-top:1.3em;
+  }
+
+  #html_news {
+    width:1em;
+    height:1em;
+  }
+
+  #css_news {
+    width:1em;
+    height:1em;
+  }
+
+  #javascript_news {
+    width:1em;
+    height:1em;
+  }
+
+  #html {
+    width:1em;
+    height:1em;
+  }
+
+  #plain {
+    width:1em;
+    height:1em;
+  }
+}
+
+@media (min-width:600px) {
+
+  #zip_code {
+    width:25%;
+  }
+
+  #fieldset2 input {
+    padding-top:1em;
+    margin-top:1.3em;
+  }
+
+  #html_news {
+    width:1em;
+    height:1em;
+  }
+
+  #css_news {
+    width:1em;
+    height:1em;
+  }
+
+  #javascript_news {
+    width:1em;
+    height:1em;
+  }
+
+  #html {
+    width:1em;
+    height:1em;
+  }
+
+  #plain {
+    width:1em;
+    height:1em;
+  }
+
+}
+
+@media (min-width:768px) {
+
+  #hr1, #fieldset1, #hr2, #fieldset2 {
+    width:60%;
+  }
+
+  #submit {
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+  }
+
+  #fieldset1 input#name,
+  #fieldset1 input#mail,
+  #fieldset1 input#phone {
+    width:60%;
+    float:right;
+    clear:right;
+  }
+
+  #fieldset1 input#address,
+  #fieldset1 input#city {
+    width:62%;
+    float:right;
+    clear:right;
+  }
+
+  #fieldset1 select#state {
+    width:65%;
+    float:right;
+    clear:right;
+  }
+
+  #fieldset1 input#zip_code {
+    float:right;
+    clear:right;
+    margin-right:37%;
+  }
+
+  #fieldset1 label {
+    float:left;
+    margin-top:2em;
+    margin-bottom:2em;
+  }
+
+  #fieldset2 #sugesstion {
+    padding-top:0.5em;
+  }
+
+
+}
+
+@media (min-width:1200px) {
+
+  #fieldset1 input#address,
+  #fieldset1 input#city {
+    width:61%;
+    float:right;
+    clear:right;
+    padding-left:1.1em;
+  }
+
+  #fieldset1 select#state {
+    width:63%;
+    float:right;
+    clear:right;
+  }
+
+  #fieldset1 input#zip_code {
+    float:right;
+    clear:right;
+    margin-right:36%;
+  }
+
+  #fieldset2 textarea#sugesstion {
+    padding-left:2em;
+  }
+
+}
